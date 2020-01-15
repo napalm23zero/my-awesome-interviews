@@ -1,6 +1,6 @@
 # Java Awesome Interview
 
-Here some interview questions that and ridiculously complete answers, to impress your interviewers
+Here some interview questions and some ridiculously complete answers, to impress your interviewers
 
 ---
 
@@ -34,7 +34,7 @@ Methods must have a return indicator keyword, if your method does not return any
 
 After method name, inside parenthesis, you can send parameters to the method, this parameters are not required, but when applied must have type specified and then a given name. Multiple parameters, must be separated by comma.
 
-## Can you list some Java cool features?
+## Can you list some Java features?
 
 Java is strongly made up on OOP concepts like Inheritance, Encapsulation, Polymorphism and Abstraction, despites the fact that can implement Functional Programming too. It's Platform Independent, so you can run the exactly same code in different OSs and Hardwares. It has High Performance thanks to JIT (Just In Time compiler) and it is Multi-threaded, so a flow of execution can perform multiple activities in parallel.
 
