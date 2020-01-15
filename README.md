@@ -51,3 +51,31 @@ Hierarchically:
 `JDK` (Java Development Kit) it provides all the tools needed to run, debug and compile Java code.
 
 `JRE` (Java Runtime Environment) it is the platform that execute Java Programs, it contains JVM binaries ena some Core classes needed to run any Java Application.
+
+## What if a Class?
+
+A Class ins an Entity that determines a behave of an Object, the structure and type of the information that it will contains. An Object is an instance of a class that have behavior inherited com the referred Class and mutable information.
+
+## What is a Constructor?
+
+The constructor is a method that has the same name as class name, inside this constructor you can enable some logic that will be executed as soon as the class is instantiated, you can create many constructors as you want but they need to have different signatures (parameters set). If you do not create any constructor, a default empty constructor will be created.
+
+Here an example of a Constructor in Java:
+
+```Java
+public class User {
+
+    String userName;
+
+    // empty constructor
+    public User() {
+        System.out.println("Your User has no name");
+    }
+
+    // constructor with signature
+    public User(String name) {
+        System.out.println("Welcome " + name);
+        this.userName = name;
+    }
+}
+```
