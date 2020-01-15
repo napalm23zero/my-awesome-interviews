@@ -52,7 +52,7 @@ Hierarchically:
 
 `JRE` (Java Runtime Environment) it is the platform that execute Java Programs, it contains JVM binaries ena some Core classes needed to run any Java Application.
 
-## What if a Class?
+## What is a Class?
 
 A Class ins an Entity that determines a behave of an Object, the structure and type of the information that it will contains. An Object is an instance of a class that have behavior inherited com the referred Class and mutable information.
 
@@ -76,6 +76,80 @@ public class User {
     public User(String name) {
         System.out.println("Welcome " + name);
         this.userName = name;
+    }
+}
+```
+
+## What is OOP?
+
+OOP (Object Oriented Programming) is a programming paradigm that base all data flow in Objects, i other words, every entity that can perform actions or can store data on the application is an Object. OOP typically use some concepts to make code more `readable`, `reusable`, `trackable` and `extensible`, this concepts are:
+
+- Inheritance
+- Encapsulation
+- Polymorphism
+- Abstraction
+
+### explaining each of them.
+
+#### Inheritance
+
+Allows new classes adopt properties (attributes and methods) from another. It is a time saving feature. If you you have many Entities with a lot of properties in common, you can write a Class with all of this properties and create new Classes extending the first one adding only non common properties to them.
+
+Here an example of a Inheritance in Java:
+
+```Java
+// Here we have the "model class" that have common properties
+public class Person {
+    String name;
+    Integer age;
+
+    public Person(String name, Integer age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public void introduce(String name, Integer age) {
+        System.out.println("Hello my name is " + name + " and I'm "+ age);
+    }
+}
+```
+
+```Java
+// Here we have Developer Class that is a extension from Person
+public class Developer extends Person {
+    String ide;
+    String language;
+
+    public Developer(String name, Integer age, String ide, String language) {
+        super(name, age); // name and age are inherited properties
+        this.ide = ide;
+        this.language = language;
+    }
+
+    public void code() {
+        introduce(this.name, this.age);
+        System.out.println("I'm a Developer");
+        System.out.println("I use " + this.ide + " to work with " + this.language);
+    }
+}
+```
+
+```Java
+// Here we have Desinger Class that is a extension from Person
+public class Designer extends Person {
+    String editor;
+    String modeler;
+
+    public Designer(String name, Integer age, String editor, String modeler) {
+        super(name, age); // name and age are inherited properties
+        this.editor = editor;
+        this.modeler = modeler;
+    }
+
+    public void create() {
+        introduce(this.name, this.age);
+        System.out.println("I'm a Designer");
+        System.out.println("I use " + this.editor + " to edit and " + this.modeler + " to create prototypes.");
     }
 }
 ```
