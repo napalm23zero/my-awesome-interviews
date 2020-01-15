@@ -22,7 +22,7 @@ public class HelloWorld {
 }
 ```
 
-#### a little bit of sytax
+### a little bit of syntax
 
 Java uses brackets to open/close code structures and semicolon to close code lines.
 
@@ -40,4 +40,14 @@ Java is strongly made up on OOP concepts like Inheritance, Encapsulation, Polymo
 
 ## You told about JIT, can you explain it to us?
 
-JIT (Just In Time compiler) is a component of JRE that improves the performance do Java application ai run time converting instructions into bytecode.
+JIT (Just In Time compiler) is a component of JRE that improves the performance do Java application ai run time converting instructions into bytecode, and then this bytecode is converted to native machine code, then hardware can read it faster, leading performance to application. JIT compilation require a huge amount of processor and memory, but only on the first time application runs.
+
+## Explain the difference between JRE, JDK, JVM and SDK.
+
+Hierarchically:
+
+`JVM` (Java Virtual Machine) is the core os Java Programming Language, when a program runs, JVM responsible to convert bytecode to machine code. JVM assures that your code will run in any machine as it is, because JVM has a different implementation for different OS and Hardware, but ir reads your code in the same way and compile ir to machine code as it needs. JVM works as manager of resources too, cause it handles with memory usage and optimization too.
+
+`JDK` (Java Development Kit) it provides all the tools needed to run, debug and compile Java code.
+
+`JRE` (Java Runtime Environment) it is the platform that execute Java Programs, it contains JVM binaries ena some Core classes needed to run any Java Application.
