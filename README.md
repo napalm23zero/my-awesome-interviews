@@ -1,6 +1,6 @@
-# Java Awesome Interview
+# Java Awesome Notes
 
-Here some interview questions and some ridiculously complete answers, to impress your interviewers
+Here some interview/classes questions and some ridiculously complete answers, to impress your interviewers
 
 ---
 
