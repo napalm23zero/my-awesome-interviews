@@ -2,8 +2,6 @@
 
 Here some interview/classes questions and some ridiculously complete answers, to impress your interviewers
 
----
-
 ## What is Java?
 
 Java is a general-purpose, high-level programming language. Java is mainly Object Oriented, despite is possible to do functional and structured oriented software.
